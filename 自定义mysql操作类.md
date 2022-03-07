@@ -1,7 +1,7 @@
 ##### Author : `GZH`
 ##### Date   : `2022-3-7`
 
-## 自定义数据库操作类
+### *自定义数据库操作类*
 
 ### 准备
 
@@ -10,7 +10,8 @@
     类名 : Model
     实例中的属性:
             table_name = None # 表名
-            self.link = pymysql.connect(host=config.HOST, user=config.USER, password=config.PASSWD, db=config.DBNAME,charset='utf8') #数据库连接对象
+            self.link = pymysql.connect(host=config.HOST, user=config.USER, password=config.PASSWD, 
+            db=config.DBNAME,charset='utf8') #数据库连接对象
             self.cursor = self.link.cursor(pymysql.cursors.DictCursor) #游标对象
             pk = 'id' #主键字段名
             fields=[] #表中所有字段名
