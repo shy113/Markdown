@@ -2,7 +2,7 @@
 
 ### 准备
 
-```
+
 >    import pymysql # 需要导入的包
 >    类名 : Model
 >    实例中的属性:
@@ -24,7 +24,7 @@
 >        PASSWD = 'yujie113'  # 密码
 >        DBNAME = 'mydb'  # 数据库名
 >        PORT = 3306  # 端口
-```
+
 
 ### Model类中的方法:
 
