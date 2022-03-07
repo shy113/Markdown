@@ -2,29 +2,29 @@
 
 ### 准备
 
-
->    import pymysql # 需要导入的包
->    类名 : Model
->    实例中的属性:
->            table_name = None # 表名
->            self.link = pymysql.connect(host=config.HOST, user=config.USER, password=config.PASSWD, db=config.DBNAME,charset='utf8') #数据库连接对象
->            self.cursor = self.link.cursor(pymysql.cursors.DictCursor) #游标对象
->            pk = 'id' #主键字段名
->            fields=[] #表中所有字段名
->    类中魔术方法:
->            _init__(table,config=config)#构造方法，实现数据库连接等初始化工作
->                参数: table被操作的数据表名
->                参数: config 导入的数据库连接配置信息
->            __del__()#析构方法，完成关闭数据库操作
->    
->    config.py
->    重要参数的配置信息:
->        HOST = 'localhost'  # 主机名
->        USER = 'root'  # 用户名
->        PASSWD = 'yujie113'  # 密码
->        DBNAME = 'mydb'  # 数据库名
->        PORT = 3306  # 端口
-
+```
+    import pymysql # 需要导入的包
+    类名 : Model
+    实例中的属性:
+            table_name = None # 表名
+            self.link = pymysql.connect(host=config.HOST, user=config.USER, password=config.PASSWD, db=config.DBNAME,charset='utf8') #数据库连接对象
+            self.cursor = self.link.cursor(pymysql.cursors.DictCursor) #游标对象
+            pk = 'id' #主键字段名
+            fields=[] #表中所有字段名
+    类中魔术方法:
+            _init__(table,config=config)#构造方法，实现数据库连接等初始化工作
+                参数: table被操作的数据表名
+                参数: config 导入的数据库连接配置信息
+            __del__()#析构方法，完成关闭数据库操作
+    
+    config.py
+    重要参数的配置信息:
+        HOST = 'localhost'  # 主机名
+        USER = 'root'  # 用户名
+        PASSWD = 'yujie113'  # 密码
+        DBNAME = 'mydb'  # 数据库名
+        PORT = 3306  # 端口
+```
 
 ### Model类中的方法:
 
