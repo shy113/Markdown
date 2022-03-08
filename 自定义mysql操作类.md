@@ -16,7 +16,7 @@
             pk = 'id' #主键字段名
             fields=[] #表中所有字段名
     类中魔术方法:
-            _init__(table,config=config)#构造方法，实现数据库连接等初始化工作
+            __init__(table,config=config)#构造方法，实现数据库连接等初始化工作
                 参数: table被操作的数据表名
                 参数: config 导入的数据库连接配置信息
             __del__()#析构方法，完成关闭数据库操作
